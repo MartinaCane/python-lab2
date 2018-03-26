@@ -1,8 +1,16 @@
 from sys import argv
+
 filename=argv[1]
+
 txt=open(filename)
-# print("Your file %r is: ", % filename)
-print(txt.read())
+
+print("Your file ",filename,":")
+list=[txt.readlines()]
+print(list)
+print(len(list))
+
+tasks=[txt.readline(0)]
+print(tasks)
 
 
 '''
